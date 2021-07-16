@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = 'http://localhost:3001/api/articles'
+const baseUrl = 'https://nameless-lake-53289.herokuapp.com/api/articles'
 
 const getAll = () => {
     const request = axios.get(baseUrl)

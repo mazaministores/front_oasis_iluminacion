@@ -1,7 +1,7 @@
 import axios from 'axios'
 // https://arcane-eyrie-30218.herokuapp.com
 
-const baseUrl = 'http://localhost:3001/api/methods'
+const baseUrl = 'https://nameless-lake-53289.herokuapp.com/api/methods'
 
 const getAll = () => {
     const request = axios.get(baseUrl)
