@@ -17,6 +17,7 @@ body{
   width: 100%;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 .header-content{
   background-color: white;
@@ -921,7 +922,7 @@ color: #000;
   color: gray;
 }
 .nav-logo{
-  width: 10%;
+  width: 8%;
 }
 .img-modal{
   width: 100%;

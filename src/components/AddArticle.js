@@ -111,6 +111,7 @@ function AddArticle(props) {
                             <input className="input" name="price" onChange={handleInputChange} required />
                             <label className="label m-t-2">Categoria</label>
                             <select className="select" name="categorie" onChange={handleInputChange}>
+                                <option value="indefinido">SELECCIONAR</option>
                                 {
                                     categories.map(doc => <option key={doc} value={doc}>{doc}</option>)
                                 }
