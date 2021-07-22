@@ -14,19 +14,29 @@ function UpdateArticle(props) {
     //     "Bebidas",
     // ]
     const categories = [
-        'ALUMBRADO PUBLICO',
-        'ARO DE LUZ',
-        'CINTA LED',
-        'LAMPARA LED',
-        'PANEL LED',
         'REFLECTOR LED',
+        'ARO DE LUZ',
+        'LAMPARA LED',
+        'LAMPARA HERMETICA',
+        'PANEL LED',
+        'MANPARO LED',
+        'DOWNLIGHT',
+        'MULTIMETRO',
+        'BOMBILLO LED',
+        'BOMBILLO LED TIPO FLAMA',
+        'BOMBILLO ECOHOME STICK',
+        'BOMBILLO LED TIPO REFLECTOR',
+        'CINTA LED',
+        'TUBERIA EMT',
+        'ALUMBRADO PUBLICO',
         'BATERIA',
         'BASE TV',
         'BALANZA',
         'ANUNCIO',
-        'BOMBILLO LED'
+        'BREAKER',
+        'CABLE THW',
+        'PLANTA ELECTRICA'
     ]
-
     const [values, setValues] = useState({})
 
     useEffect(() => {

@@ -55,13 +55,24 @@ function AddArticle(props) {
         'ARO DE LUZ',
         'CINTA LED',
         'LAMPARA LED',
+        'LAMPARA HERMETICA',
         'PANEL LED',
+        'MANPARO LED',
         'REFLECTOR LED',
+        'DOWNLIGHT',
+        'BOMBILLO LED',
+        'BOMBILLO LED TIPO FLAMA',
+        'BOMBILLO ECOHOME STICK',
+        'BOMBILLO LED TIPO REFLECTOR',
+        'TUBERIA EMT',
         'BATERIA',
         'BASE TV',
         'BALANZA',
         'ANUNCIO',
-        'BOMBILLO LED'
+        'MULTIMETRO',
+        'BREAKER',
+        'CABLE THW',
+        'PLANTA ELECTRICA'
     ]
     const initialValues = {
         brand: "",

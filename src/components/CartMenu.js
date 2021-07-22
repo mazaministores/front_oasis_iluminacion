@@ -155,7 +155,7 @@ function CartMenu(props) {
                     <div className="buttons-cart">
                         <div
                             className="button-cart"
-                            style={{ borderBottom: sectionCart === 'pedido' ? '5px solid #FF3100' : '' }}
+                            style={{ borderBottom: sectionCart === 'pedido' ? '5px solid #52aa4a' : '' }}
                             onClick={() => handleSetSection('pedido')}
                         >
                             <p>Pedido</p>
@@ -163,14 +163,14 @@ function CartMenu(props) {
                         <div
                             className="button-cart"
                             onClick={() => handleSetSection('Checkout')}
-                            style={{ borderBottom: sectionCart === 'Checkout' ? '5px solid #FF3100' : '' }}
+                            style={{ borderBottom: sectionCart === 'Checkout' ? '5px solid #52aa4a' : '' }}
                         >
                             <p>Chekout</p>
                         </div>
                         <div
                             className="button-cart"
                             onClick={() => handleSetSection('confirmar')}
-                            style={{ borderBottom: sectionCart === 'confirmar' ? '5px solid #FF3100' : '' }}
+                            style={{ borderBottom: sectionCart === 'confirmar' ? '5px solid #52aa4a' : '' }}
                         >
                             <p>Confirmar</p>
                         </div>
