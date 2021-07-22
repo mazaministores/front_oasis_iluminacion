@@ -6,6 +6,8 @@
 .pnp.js
 
 ARCHIVOS_RESET
+ARCHIVOS_OASIS
+ARCHIVOS_SUSERCA
 
 # testing
 /coverage
