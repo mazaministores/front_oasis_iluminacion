@@ -78,6 +78,7 @@ const rootReducer = (state = initState, action) => {
             article: action.article,
         }
     } else if (action.type === "UPDATE_FILTER") {
+        console.log(action.size)
         // (state.filters.findIndex(x => x === action.size)) === -1 ? state.filters.push(action.size) : state.filters.splice((state.filters.findIndex(x => x === action.size)), 1)
         return {
             ...state,

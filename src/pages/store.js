@@ -1,27 +1,22 @@
 import React from 'react'
-import NavBar from "../components/NavBar";
 import ShoppingPage from '../components/ShoppingPage';
 import { Provider } from 'react-redux'
-import CartMenu from '../components/CartMenu'
-import Alert from '../components/Alert';
 import store from '../redux/store'
+import Layout from '../components/Layout';
+import useArticlesForCategory from 'src/hooks/useArticlesForCategory';
 
-export default function StorePage() {
+export default function StorePage({ params }) {
+  const category = decodeURI(params.id.toUpperCase())
 
-  let currentPage = "MENU"
-
-  store.subscribe(() => {
-  })
+  const { articles, loading } = useArticlesForCategory(category)
 
   return (
     <Provider store={store}>
-      <div className="App">
-        <NavBar currentPage={currentPage} />
-        <ShoppingPage />
-        <CartMenu />
-        <Alert />
-      </div>
+      <Layout>
+        <div className="App">
+          <ShoppingPage title={category} articles={articles} loading={loading} />
+        </div>
+      </Layout>
     </Provider>
   )
-
 }

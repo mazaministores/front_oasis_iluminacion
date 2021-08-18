@@ -1,42 +1,80 @@
 import React, { useEffect, useState } from 'react'
 import { connect } from 'react-redux'
+import { uploadImg } from '../firebase/client'
 import Spinner from './Loading'
 
 function UpdateArticle(props) {
 
-    // const categories = [
-    //     "Arroz",
-    //     "Carnes",
-    //     "Ensaladas",
-    //     "Pastas",
-    //     "Verduras",
-    //     "Postres",
-    //     "Bebidas",
-    // ]
+    const COMPOSE_STATES = {
+        USER_NOT_KNOW: 0,
+        LOADING: 1,
+        SUCCESS: 2,
+        ERROR: -1,
+        LOADING_FORM: 10,
+        NO_LOADING_FORM: 20,
+    }
+    const [status, setStatus] = useState(COMPOSE_STATES)
+    const [task, setTask] = useState(null)
+    const [imgUrl, setImgUrl] = useState(null)
+    const [loading, setLoading] = useState(COMPOSE_STATES.USER_NOT_KNOW)
+
+    useEffect(() => {
+        if (task) {
+            const onProgress = () => {
+                setStatus(COMPOSE_STATES.LOADING)
+                setLoading(COMPOSE_STATES.LOADING)
+            }
+            const onError = () => { }
+
+            const onComplete = () => {
+                setLoading(COMPOSE_STATES.USER_NOT_KNOW)
+                setStatus(COMPOSE_STATES)
+                task.snapshot.ref.getDownloadURL()
+                    .then(setImgUrl)
+            }
+            task.on('state_changed',
+                onProgress,
+                onError,
+                onComplete
+            )
+        }
+    }, [task])
+
+
+    const handleChangeInputFile = (event) => {
+        setStatus(COMPOSE_STATES.LOADING)
+        const file = event.target.files[0]
+        const task = uploadImg(file)
+        setTask(task)
+    }
     const categories = [
-        'REFLECTOR LED',
-        'ARO DE LUZ',
-        'LAMPARA LED',
-        'LAMPARA HERMETICA',
-        'PANEL LED',
-        'MANPARO LED',
-        'DOWNLIGHT',
-        'MULTIMETRO',
-        'BOMBILLO LED',
-        'BOMBILLO LED TIPO FLAMA',
-        'BOMBILLO ECOHOME STICK',
-        'BOMBILLO LED TIPO REFLECTOR',
-        'CINTA LED',
-        'TUBERIA EMT',
-        'ALUMBRADO PUBLICO',
-        'BATERIA',
-        'BASE TV',
-        'BALANZA',
-        'ANUNCIO',
+        'EMPOTRADOS',
+        'ILUMINACIÓN LED',
+        'BOMBILLO',
+        'LAMPARAS DECORATIVAS',
+        'CAJAS METALICAS',
+        'TUBOS',
+        'CONEXIONES',
+        'MISCELANEAS',
+        'CABLES',
+        'PROTECTORES Y REGULADORES',
+        'CANALETAS Y ACCESORIOS',
+        'EXTRACTORES Y REJILLAS',
+        'SISTEMA DE ALARMA',
+        'TOMAS',
+        'INTERRUPTORES',
+        'SOCATES',
         'BREAKER',
-        'CABLE THW',
-        'PLANTA ELECTRICA'
+        'HERRAMIENTAS',
+        'BATERIAS',
+        'TRANSFORMADORES Y BALASTOS',
+        'CONTACTORES',
+        'COMIDA',
+        'VAPOLETAS',
+        'PILAS',
+        'REFLECTORES'
     ]
+
     const [values, setValues] = useState({})
 
     useEffect(() => {
@@ -51,7 +89,7 @@ function UpdateArticle(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        props.updateArticle(values.id, values)
+        props.updateArticle(values.id, { ...values, image: imgUrl },)
     }
 
     return (
@@ -82,6 +120,16 @@ function UpdateArticle(props) {
                                             categories.map((doc) => <option key={doc} value={doc}>{doc}</option>)
                                         }
                                     </select>
+                                    <div className="m-t-2">
+                                        <label className="archive">EDITAR IMAGEN
+                                            <input className="input-file" type="file" onChange={handleChangeInputFile} /></label>
+                                        {loading === COMPOSE_STATES.LOADING ? <div><Spinner /> </div> : <>
+                                            {imgUrl && <section className="remove-img">
+                                                <button className="btn-add-file" onClick={() => setImgUrl(null)}>x</button>
+                                                <img loading="lazy" className="add-img" alt="Imagen" src={imgUrl} />
+                                            </section>}
+                                        </>}
+                                    </div>
                                 </> : <></>
                             }
 
@@ -90,7 +138,7 @@ function UpdateArticle(props) {
                     <div className="cart-menu-subtotal">
                         <div className="m-t-2" >
                             <p style={{ margin: '2px', fontWeight: '700', color: '#1f1d26' }}>{props.message}</p>
-                            {props.loadingPost ? <div><Spinner /></div> : <button type="submit" className="btn">Modificar Articulo</button>}
+                            {loading === COMPOSE_STATES.LOADING || props.loadingPost ? <div><Spinner /></div> : <button type="submit" className="btn">Modificar Articulo</button>}
                         </div>
                     </div>
                 </form>

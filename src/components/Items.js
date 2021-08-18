@@ -1,70 +1,30 @@
 import React from 'react'
 import Card from './Card'
 import { connect } from 'react-redux'
-import useArticles from '../hooks/useArticles'
 import Spinner from './Loading'
-import ListItems from './ListItems'
 import Modal from './Modal'
 
 function Items(props) {
 
-    // const categories = [
-    //     'Arroz',
-    //     'Carnes',
-    //     'Ensaladas',
-    //     'Pastas',
-    //     'Verduras',
-    //     'Postres',
-    //     'Bebidas'
-    // ]
-    const categories = [
-        'REFLECTOR LED',
-        'ARO DE LUZ',
-        'LAMPARA LED',
-        'LAMPARA HERMETICA',
-        'PANEL LED',
-        'MANPARO LED',
-        'DOWNLIGHT',
-        'MULTIMETRO',
-        'BOMBILLO LED',
-        'BOMBILLO LED TIPO FLAMA',
-        'BOMBILLO ECOHOME STICK',
-        'BOMBILLO LED TIPO REFLECTOR',
-        'CINTA LED',
-        'TUBERIA EMT',
-        'ALUMBRADO PUBLICO',
-        'BATERIA',
-        'BASE TV',
-        'BALANZA',
-        'ANUNCIO',
-        'BREAKER',
-        'CABLE THW',
-        'PLANTA ELECTRICA'
-    ]
-    const { articles, loading } = useArticles()
 
-    if (loading) return <Spinner />
+    if (props.loading) return <Spinner />
+
+    console.log(props.articles)
+
     return (
         <>
             <div style={{ marginBottom: '40px' }} >
-                {props.filters.length === 0 ? <>
-                    {categories.map((doc, index) =>
-                        articles.some(item => item.categorie === doc) ?
-                            <>
-                                <h5 className="categorie">{doc}</h5>
-                                <div key={index} className="items-container" >
-                                    {articles.map(item =>
-                                        item.categorie === doc ?
-                                            <>
-                                                <Card key={item.id} id={item.id} brand={item.brand} model={item.model} price={item.price} image={item.image} sizes={item.sizes} />
-                                            </>
-                                            : <></>
-                                    )}
-                                </div>
-                            </> : '')
+                <h5 className="categorie">{props.title}</h5>
+                <div className="items-container" >
+                    {
+                        props.articles.length === 0 ? <p className="no-found "> 😭 <span> No hay resultados en "{props.title}"</span></p> : <>
+                            {props.articles.map(item =>
+                                <Card key={item.id} id={item.id} brand={item.brand} model={item.model} price={item.price} image={item.image} sizes={item.sizes} />
+                            )}
+                        </>
                     }
-                </> : <ListItems {...props} articles={articles} />
-                }
+
+                </div>
             </div>
             <div>
                 {props.modal ? <Modal onClose={props.closeModal}>
@@ -82,8 +42,6 @@ function Items(props) {
 
 const mapStateToProps = state => {
     return {
-        filters: state.filters,
-        search: state.search,
         modal: state.modal
     }
 }

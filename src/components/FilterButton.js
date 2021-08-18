@@ -4,12 +4,12 @@ import { connect } from 'react-redux'
 function FilterButton(props) {
 
     const [isClicked, setClicked] = useState(false)
-    const handle=()=>{
-    console.log(props)
-    props.updateFilters(props)
+    const handle = () => {
+        console.log(props)
+        props.updateFilters(props)
     }
     return (
-        <div className={`sizes-button ${isClicked ? "sizes-button-clicked":null}`} onClick={() => { 
+        <div className={`sizes-button ${isClicked ? "sizes-button-clicked" : null}`} onClick={() => {
 
             handle()
             setClicked(!isClicked)
@@ -18,7 +18,7 @@ function FilterButton(props) {
     )
 }
 
-const mapStateToProps = state =>{
+const mapStateToProps = state => {
 
     return {
         fiters: state.filters
@@ -28,9 +28,9 @@ const mapStateToProps = state =>{
 const mapDispatchToProps = (dispatch) => {
     return {
         updateFilters: (props) => {
-            dispatch({type: "UPDATE_FILTER", size: props.categorie})
+            dispatch({ type: "UPDATE_FILTER", size: props.categorie })
         }
     }
 }
 
-export default connect( mapStateToProps, mapDispatchToProps)(FilterButton)
+export default connect(mapStateToProps, mapDispatchToProps)(FilterButton)

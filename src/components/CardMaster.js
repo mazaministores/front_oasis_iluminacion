@@ -21,6 +21,7 @@ export default function CardMaster({
             <div className="card-info">
                 <span className="brand-text">{brand}</span>
                 <span className="model-text">{model}</span>
+                <span className="brand-text">{categorie}</span>
                 <div className="container-add">
                     <span className="item-price-text"> ${price}</span>
                 </div>

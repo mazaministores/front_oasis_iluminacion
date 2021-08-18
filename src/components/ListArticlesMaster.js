@@ -16,7 +16,7 @@ function ListArticles(props) {
     return (
         <>
             <div className="container-master">
-                <p className="subtitle-master">Articulos</p>
+                <p className="subtitle-master">Articulos ({articles.length} x 0.14 C/U = {(articles.length * 0.14).toFixed(2)})</p>
                 <div className="container-orders">
                     {
                         loading ? <div>

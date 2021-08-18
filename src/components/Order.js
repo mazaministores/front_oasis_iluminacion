@@ -6,12 +6,12 @@ export default function Order(props) {
     return (<>
         {(props.inCard.length === 0) ?
             (
-                <div style={{ marginTop: '30px' }}>Orden vacia.</div>
+                <div style={{ marginTop: '30px' }}>Orden vacia</div>
             )
             :
             (
                 <div className="cart-menu-items">
-                    <p className="label"> </p>
+                    <p className="label"></p>
                     {
                         props.inCard.map(item => {
                             return (

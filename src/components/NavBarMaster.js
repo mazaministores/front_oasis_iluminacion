@@ -13,8 +13,8 @@ export default function NavBarMaster(props) {
 
     return (
         <div className="header">
-            <div className="header-content">
-                <span className="header-logo d-sm-none">OasisAdmin</span>
+            <div className="header-content" style={{ color: '#fff' }}>
+                <span className="header-logo d-sm-none" style={{ color: '#fff' }}>ELECTRILAMPADMIN</span>
                 <div className="header-buttons">
                     <div onClick={() => navigate('/master')}>
                         <NavBarButton text="PEDIDOS" {...props} />

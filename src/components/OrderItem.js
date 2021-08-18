@@ -24,7 +24,7 @@ export default function OrderItem(props) {
             )
         })
 
-        window.open(`https://api.whatsapp.com/send?phone=+5804241917939&text=Hola+recibimos+tu+pedido+${props.nombre}
+        window.open(`https://api.whatsapp.com/send?phone=+${props.telefono}&text=Hola+recibimos+tu+pedido+${props.nombre}
             %0AReferencia+de+pedido:+${props.numeroPedido}%0A+Items+del+pedido:%0A${cart.toString()}+%0A
             Tipo+de+compra:+${props.tipo === 'delivery' ? 'Delivery' :
                 'Recoger+personalmente'}%0A${props.tipo === 'delivery' ? ('Direccion+de+entrega:+' + props.direccion +

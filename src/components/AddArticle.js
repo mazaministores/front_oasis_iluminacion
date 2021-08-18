@@ -41,39 +41,36 @@ function AddArticle(props) {
         }
     }, [task])
 
-    // const categories = [
-    //     "Arroz",
-    //     "Carnes",
-    //     "Ensaladas",
-    //     "Pastas",
-    //     "Verduras",
-    //     "Postres",
-    //     "Bebidas",
-    // ]
+
+
     const categories = [
-        'ALUMBRADO PUBLICO',
-        'ARO DE LUZ',
-        'CINTA LED',
-        'LAMPARA LED',
-        'LAMPARA HERMETICA',
-        'PANEL LED',
-        'MANPARO LED',
-        'REFLECTOR LED',
-        'DOWNLIGHT',
-        'BOMBILLO LED',
-        'BOMBILLO LED TIPO FLAMA',
-        'BOMBILLO ECOHOME STICK',
-        'BOMBILLO LED TIPO REFLECTOR',
-        'TUBERIA EMT',
-        'BATERIA',
-        'BASE TV',
-        'BALANZA',
-        'ANUNCIO',
-        'MULTIMETRO',
+        'EMPOTRADOS',
+        'ILUMINACIÓN LED',
+        'BOMBILLO',
+        'LAMPARAS DECORATIVAS',
+        'CAJAS METALICAS',
+        'TUBOS',
+        'CONEXIONES',
+        'MISCELANEAS',
+        'CABLES',
+        'PROTECTORES Y REGULADORES',
+        'CANALETAS Y ACCESORIOS',
+        'EXTRACTORES Y REJILLAS',
+        'SISTEMA DE ALARMA',
+        'TOMAS',
+        'INTERRUPTORES',
+        'SOCATES',
         'BREAKER',
-        'CABLE THW',
-        'PLANTA ELECTRICA'
+        'HERRAMIENTAS',
+        'BATERIAS',
+        'TRANSFORMADORES Y BALASTOS',
+        'CONTACTORES',
+        'COMIDA',
+        'VAPOLETAS',
+        'PILAS',
+        'REFLECTORES'
     ]
+
     const initialValues = {
         brand: "",
         model: "",

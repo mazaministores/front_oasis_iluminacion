@@ -2,13 +2,12 @@ import firebase from 'firebase/app'
 import 'firebase/storage'
 
 const firabaseConfig = {
-    apiKey: "AIzaSyCWZOAsqWpG6UfpfCOrwLeKLmdnedCaoRQ",
-    authDomain: "mzmenudigital.firebaseapp.com",
-    projectId: "mzmenudigital",
-    storageBucket: "mzmenudigital.appspot.com",
-    messagingSenderId: "616924147399",
-    appId: "1:616924147399:web:76551b6af4b52a099fd8e2",
-    measurementId: "G-FFQ34HRZ08"
+    apiKey: "AIzaSyCwZ2P7EFxENlP1ZQFeNOjMI_S6Yr_0af4",
+    authDomain: "electrilamp-f53b2.firebaseapp.com",
+    projectId: "electrilamp-f53b2",
+    storageBucket: "electrilamp-f53b2.appspot.com",
+    messagingSenderId: "942454031107",
+    appId: "1:942454031107:web:9d858ac83ea66dc3265f36"
 }
 
 !firebase.apps.length && firebase.initializeApp(firabaseConfig)

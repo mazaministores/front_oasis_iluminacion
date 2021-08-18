@@ -127,13 +127,12 @@ function CartMenu(props) {
         })
 
 
-        window.open(`https://api.whatsapp.com/send?phone=+5804129991157&text=Hola+mi+nombre+es+${action.nombre}
+        window.open(`https://api.whatsapp.com/send?phone=+5804122842606&text=Hola+mi+nombre+es+${action.nombre}
             %0AReferencia+de+pedido:+${action.numeroPedido}%0A+Items+del+pedido:%0A${cart.toString()}+%0A
             Tipo+de+compra:+${action.tipo === 'delivery' ? 'Delivery' :
                 'Recoger+personalmente'}%0A${action.tipo === 'delivery' ? ('Direccion+de+entrega:+' + action.direccion +
                     '%0ANumero+Apartamento/Casa+etc:+' + values.casa +
-                    '%0ALocalidad:+' + action.localidad + '%0ASubtotal:+$' + action.subtotal) : ''}%0A
-                    Costo+delivery:+$${priceDelivery}
+                    '%0ALocalidad:+' + action.localidad + '%0ASubtotal:+$' + action.subtotal + `%0ACosto+delivery:+$${priceDelivery}`) : ''}%0A
                     %0ATotal:+$${action.total}
                     %0AMetodo+de+Pago:+${action.metodoPago}
             `)
@@ -155,7 +154,7 @@ function CartMenu(props) {
                     <div className="buttons-cart">
                         <div
                             className="button-cart"
-                            style={{ borderBottom: sectionCart === 'pedido' ? '5px solid #52aa4a' : '' }}
+                            style={{ borderBottom: sectionCart === 'pedido' ? '5px solid #003779' : '' }}
                             onClick={() => handleSetSection('pedido')}
                         >
                             <p>Pedido</p>
@@ -163,14 +162,14 @@ function CartMenu(props) {
                         <div
                             className="button-cart"
                             onClick={() => handleSetSection('Checkout')}
-                            style={{ borderBottom: sectionCart === 'Checkout' ? '5px solid #52aa4a' : '' }}
+                            style={{ borderBottom: sectionCart === 'Checkout' ? '5px solid #003779' : '' }}
                         >
                             <p>Chekout</p>
                         </div>
                         <div
                             className="button-cart"
                             onClick={() => handleSetSection('confirmar')}
-                            style={{ borderBottom: sectionCart === 'confirmar' ? '5px solid #52aa4a' : '' }}
+                            style={{ borderBottom: sectionCart === 'confirmar' ? '5px solid #003779' : '' }}
                         >
                             <p>Confirmar</p>
                         </div>

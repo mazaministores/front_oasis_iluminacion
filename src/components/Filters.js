@@ -1,48 +1,26 @@
-import React from 'react'
-// import FilterButton from './FilterButton'
+import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
-import useArticles from '../hooks/useArticles'
 
 
 function Filters(props) {
 
-    const { articles } = useArticles()
 
-    let categorieSet = new Set()
+    useEffect(() => {
 
-    articles.map(item => categorieSet.add(item.categorie))
+        if (props.search) {
+            props.updateFilters({ categorie: props.search, fiters: props.search, updateFilters: props.updateFilters })
+        } else {
+            props.searchItem({ item: props.searchForm, searchItem: props.searchItem })
+        }
 
-    categorieSet = Array.from(categorieSet) // set to array
+    }, [props])
 
-    const handleSelectChange = (e) => {
-        props.updateFilters({ categorie: e.target.value, fiters: [e.target.value], updateFilters: props.updateFilters })
-    }
-    const handleInputChange = (e) => {
-        props.searchItem({ item: e.target.value.toUpperCase(), searchItem: props.searchItem })
-    }
+
+
+
 
     return (
         <>
-            <div className="container-input-search">
-                <input className="input search" type="text" onChange={handleInputChange} placeholder="¿Que estas buscando?" />
-            </div>
-            <div className="filters">
-
-                <div className="container-select-categorie">
-                    <select className="select-categorie" onChange={handleSelectChange}>
-                        {/* <optgroup> */}
-                        <option value={[]}>Categorias</option>
-                        {
-                            categorieSet.map(categorie =>
-                                <option value={categorie}>{categorie}</option>
-                            )
-                        }
-                        {/* </optgroup> */}
-
-                    </select>
-                </div>
-
-            </div>
         </>
     )
 }
