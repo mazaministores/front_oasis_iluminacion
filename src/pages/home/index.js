@@ -17,7 +17,7 @@ export default function HomePage() {
           <main className={styles.main}>
             <div className={styles.header}>
               <h1 className={styles.title}>
-                <span className={styles.emoji}>⚡</span>Todo en iluminación
+                <span className={styles.emoji}>👍</span>Todo en iluminación
               </h1>
               <div className={styles.headerButtons}>
               </div>
