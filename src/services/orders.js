@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = 'https://powerful-ocean-91099.herokuapp.com/api/orders'
+const baseUrl = 'https://nameless-lake-53289.herokuapp.com/api/orders'
 
 const getAll = () => {
     const request = axios.get(baseUrl)

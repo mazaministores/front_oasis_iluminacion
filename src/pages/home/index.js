@@ -27,7 +27,7 @@ export default function HomePage() {
                 bgColor="#f6f6f6"
                 name="Empotrados"
                 image="./EMPOTRADOS.jpg"
-                desc="Empotrados de alta calidad al mejor precio del mercado"
+                // desc="Empotrados de alta calidad al mejor precio del mercado"
                 // price="300"
                 href="/category/empotrados"
               // sale_price="248"
@@ -36,7 +36,7 @@ export default function HomePage() {
                 bgColor="#f6f6f6"
                 name="Bombillos"
                 image="./BOMBILLOS.jpg"
-                desc="Si nosotros no lo tenemos, no lo tiene nadie"
+                // desc="Si nosotros no lo tenemos, no lo tiene nadie"
                 // price="200"
                 href="/category/bombillo"
               />
@@ -44,7 +44,7 @@ export default function HomePage() {
                 bgColor="#f6f6f6"
                 name="Cables"
                 image="./CABLES.jpg"
-                desc="Si nosotros no lo tenemos, no lo tiene nadie"
+                // desc="Si nosotros no lo tenemos, no lo tiene nadie"
                 // price="200"
                 href="/category/bombillo"
               />
@@ -61,7 +61,7 @@ export default function HomePage() {
                 bgColor="#f6f6f6"
                 name="Tomas"
                 image="./TOMAS.jpg"
-                desc="Empotrados de alta calidad al mejor precio del mercado"
+                // desc="Empotrados de alta calidad al mejor precio del mercado"
                 // price="300"
                 href="/category/empotrados"
               // sale_price="248"
@@ -70,7 +70,7 @@ export default function HomePage() {
                 bgColor="#f6f6f6"
                 name="Breaker"
                 image="./BREAKER.jpg"
-                desc="Si nosotros no lo tenemos, no lo tiene nadie"
+                // desc="Si nosotros no lo tenemos, no lo tiene nadie"
                 // price="200"
                 href="/category/bombillo"
               />
@@ -78,7 +78,7 @@ export default function HomePage() {
                 bgColor="#f6f6f6"
                 name="Varios"
                 image="./VARIOS.jpg"
-                desc="Si nosotros no lo tenemos, no lo tiene nadie"
+                // desc="Si nosotros no lo tenemos, no lo tiene nadie"
                 // price="200"
                 href="/category/bombillo"
               />

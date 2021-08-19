@@ -9,7 +9,7 @@
     --background-cart:#1f1d26;
     --shadow:0px 0px 18px -5px rgba(0, 0, 0, 0.1);
     --shadow-menu:0px 0px 38px -1px rgba(0, 0, 0, 0.6);
-    --color-primary:#f2bf1f;
+    --color-primary:#52aa4a ;
   }
   html,
   body {
@@ -20,6 +20,45 @@
       "Helvetica Neue", sans-serif;
     height: 100%;
   }
+  /* square buttons */
+.rec.rec-arrow {
+  border-radius: 50%;
+  background-color:#52aa4a ;
+}
+/* round buttons on hover */
+.rec.rec-arrow:hover:enabled {
+  background-color:#48aa3f ;
+}
+.rec.rec-arrow:focus:enabled{
+  background-color:#48aa3f ;
+}
+.rec.rec-dot_active{
+background: #52aa4a;
+box-shadow: 0 0 1px 3px #52aa4a;
+}
+.rec.rec-dot_active:hover{
+  box-shadow: 0 0 1px 3px #52aa4a;
+  }
+  .rec.rec-dot_active:focus{
+    box-shadow: 0 0 1px 3px #52aa4a;
+    }
+  .rec.rec-dot:hover{
+    box-shadow: 0 0 1px 3px #52aa4a;
+    }
+  .rec.rec-dot:focus{
+    box-shadow: 0 0 1px 3px #52aa4a;
+    }
+
+/* hide disabled buttons */
+.rec.rec-arrow:disabled {
+  visibility: hidden;
+}
+/* disable default outline on focused items */
+/* add custom outline on focused items */
+.rec-carousel-item:focus {
+  outline: none;
+  box-shadow: inset 0 0 1px 1px lightgrey;
+}
   .App {
     text-align: center;
     width: 100%;
@@ -98,7 +137,7 @@
   }
   .quantity-counter{
     border-radius: 50%;
-    background-color:#f9ea01;
+    background-color:var(--color-primary);
     width: 16px;
     height: 12px;
     display: block;
@@ -181,7 +220,7 @@
     border-radius: 4px;
   }
   .shopping-page{
-  padding: 40px 2%;
+  padding: 10px 2%;
   max-width: 1200px;
   margin: 0px auto 0;
   }
@@ -219,7 +258,7 @@
   .add-button{
     margin-top: 20px;
     padding: 15px;
-    background-color:#f9ea01;
+    background-color:#52aa4a ;
     color: white;
     margin: 10px 10px;
   }
@@ -247,6 +286,7 @@
     border: 1px solid #ecebeb;
   }
   .container-cart-menu{
+    
     position: fixed;
     top: 0px;
     width: 0%;
@@ -273,6 +313,7 @@
     background-color: #1f1d26;
     overflow-y: scroll;
     z-index: 999999;
+    border-start-start-radius: 30px;
     -webkit-box-shadow: 0px 0px 38px -1px rgba(0, 0, 0, 0.6);
             box-shadow: 0px 0px 38px -1px rgba(0, 0, 0, 0.6);
   }
@@ -343,6 +384,7 @@
   }
   .cart-menu-subtotal{
     position: fixed;
+    border-end-start-radius: 30px;
     bottom: 0px;
     background: white;
     min-height: 100px;
@@ -374,7 +416,7 @@
     background-color: var(--color-primary);
     color: white;
     margin-top: 25px;
-    border-radius: 5px;
+    border-radius: 28px;
     font-weight: 600;
     text-align: center;
     display: -ms-grid;
@@ -413,7 +455,7 @@
     display: inline-block;
     height: 30px;
     width: 30px;
-    background: #f5eb20;
+    background: var(--color-primary);
     border-radius: 100%;
     text-align: center;
     color: #fff;
@@ -450,8 +492,8 @@
     width: 300px;
     height: 50px;
     right: 30px;
-    border-radius: 4px;
-    background: #01387b;
+    border-radius: 30px;
+    background: var(--color-primary);
     display: -ms-grid;
     display: grid;
     -webkit-box-align: center;
@@ -811,7 +853,7 @@
     margin-top: 25px;
     border: none;
     outline: none;
-    border-radius: 5px;
+    border-radius: 30px;
     font-weight: 700;
     text-align: center;
     display: -ms-grid;

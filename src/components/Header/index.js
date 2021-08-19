@@ -78,7 +78,7 @@ export default function Header() {
 
         <div className={styles.profileContainer}>
           <span>
-            Hola{" "}
+            {" "}
             <span style={{ fontWeight: "normal" }}>
 
             </span>

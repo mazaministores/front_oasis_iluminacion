@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = 'https://powerful-ocean-91099.herokuapp.com/api/articles/category'
+const baseUrl = 'https://nameless-lake-53289.herokuapp.com/api/articles/category'
 
 const getArticlesForCategory = (c) => {
     const request = axios.get(`${baseUrl}/${c}`)

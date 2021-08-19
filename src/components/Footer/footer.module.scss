@@ -6,6 +6,8 @@
     border-start-end-radius: 50px;
     border-start-start-radius: 50px;
     color: #fff;
+    box-shadow: 0px 0px 8px 0px #00000080;
+
     @include md{
     display: grid;
 
