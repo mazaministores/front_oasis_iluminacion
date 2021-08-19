@@ -46,7 +46,7 @@ export default function HomePage() {
                 image="./CABLES.jpg"
                 // desc="Si nosotros no lo tenemos, no lo tiene nadie"
                 // price="200"
-                href="/category/bombillo"
+                href="/category/cables"
               />
             </Products>
             <HorizontalCard
@@ -63,7 +63,7 @@ export default function HomePage() {
                 image="./TOMAS.jpg"
                 // desc="Empotrados de alta calidad al mejor precio del mercado"
                 // price="300"
-                href="/category/empotrados"
+                href="/category/tomas"
               // sale_price="248"
               />
               <VerticalCard
@@ -72,7 +72,7 @@ export default function HomePage() {
                 image="./BREAKER.jpg"
                 // desc="Si nosotros no lo tenemos, no lo tiene nadie"
                 // price="200"
-                href="/category/bombillo"
+                href="/category/breaker"
               />
               <VerticalCard
                 bgColor="#f6f6f6"
@@ -80,7 +80,7 @@ export default function HomePage() {
                 image="./VARIOS.jpg"
                 // desc="Si nosotros no lo tenemos, no lo tiene nadie"
                 // price="200"
-                href="/category/bombillo"
+                href="/category/miscelaneas"
               />
             </Products>
           </main>
