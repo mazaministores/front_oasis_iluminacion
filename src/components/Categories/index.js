@@ -22,13 +22,13 @@ export default function CategoriesBar() {
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
     { width: 550, itemsToShow: 2 },
-    { width: 768, itemsToShow: 8 },
+    { width: 768, itemsToShow: 7 },
     { width: 1200, itemsToShow: 4 },
   ];
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Bienvenido a oasis</h2>
+      <h2 className={styles.title}>Bienvenido a Oasis</h2>
       <ul className={styles.categories}>
         <CategoryItem name="Empotrados" emoji="⚡" link="/category/empotrados" />
         <CategoryItem name="Iluminación Led" emoji="🔆" link="/category/ILUMINACIÓN LED" />
