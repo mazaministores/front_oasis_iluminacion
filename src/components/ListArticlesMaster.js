@@ -13,6 +13,7 @@ function ListArticles(props) {
     const activeUpdateArticle = (object) => {
         props.setActiveUpdate({ ...props, object })
     }
+
     return (
         <>
             <div className="container-master">

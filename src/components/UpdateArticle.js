@@ -18,6 +18,7 @@ function UpdateArticle(props) {
     const [imgUrl, setImgUrl] = useState(null)
     const [loading, setLoading] = useState(COMPOSE_STATES.USER_NOT_KNOW)
 
+
     useEffect(() => {
         if (task) {
             const onProgress = () => {
@@ -89,7 +90,7 @@ function UpdateArticle(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        props.updateArticle(values.id, { ...values, image: imgUrl },)
+        props.updateArticle(values.id, { ...values, image: imgUrl ? imgUrl : props.article.image },)
     }
 
     return (
