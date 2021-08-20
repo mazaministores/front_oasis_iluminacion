@@ -83,19 +83,20 @@
   .searchContainer {
     display: flex;
     align-items: center;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
     color: grey;
     flex-grow: 1;
     border: 1px solid #52aa4a;
     border-radius: 30px;
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+    // box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
     margin-top: 20px;
     padding: 10px;
 
     @include md {
       border: 1px solid #52aa4a;
       margin: 0 50px;
-      box-shadow: none;
       margin-top: 15px;
+      box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
       padding: 10px;
     }
 
