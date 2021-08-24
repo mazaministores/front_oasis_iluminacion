@@ -4,6 +4,7 @@ import { Route, Switch } from 'wouter';
 import StorePage from './pages/store';
 import HomePage from './pages/home';
 import SearchPage from './pages/search';
+import ScrollToTop from './components/ScrollToTop'
 
 const MasterPage = React.lazy(() => import('./pages/master/index'))
 const ArticlesPage = React.lazy(() => import('./pages/master/articles'))
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <Suspense fallback={null}>
+      <ScrollToTop />
       <Switch>
         <Route
           path="/"
