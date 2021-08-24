@@ -13,6 +13,7 @@ export default function VerticalCard({
   border,
   href,
   desc,
+  onC,
   ...props
 }) {
   const [, navigate] = useLocation()
@@ -24,7 +25,7 @@ export default function VerticalCard({
         backgroundColor: bgColor || "",
         border: border && "2px solid #eee",
       }}
-      onClick={() => navigate(href)}
+      onClick={onC ? () => window.open(onC) : () => navigate(href)}
 
     >
       {sale_price && price && (

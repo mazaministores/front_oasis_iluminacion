@@ -19,6 +19,7 @@
       "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
       "Helvetica Neue", sans-serif;
     height: 100%;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='2440' height='4260' preserveAspectRatio='none' viewBox='0 0 2440 4260'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1028%26quot%3b)' fill='none'%3e%3cpath d='M1423.86-591.44C941.14-60.68 1111.35 1995.15 485.17 2120.45-141 2245.75-124.72 1224.14-453.51 1140.65' stroke='rgba(82%2c 170%2c 74%2c 0.16)' stroke-width='2'%3e%3c/path%3e%3cpath d='M2267.2-360.83C1906.73-316.59 1971.69 203.29 1095.17 497.47 218.66 791.65 427.86 2213.89-76.85 2499.67' stroke='rgba(82%2c 170%2c 74%2c 0.16)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1087.14-419.84C831.58 321.03 1076.46 2613.34 659.89 2685.75 243.32 2758.16 218.4 1037.96-194.62 683.55' stroke='rgba(82%2c 170%2c 74%2c 0.16)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1437.18-792.97C1219.2-735.74 1541.25-420.36 819.42-136.43 97.59 147.5 85.81 1464.67-416.09 1695.37' stroke='rgba(82%2c 170%2c 74%2c 0.16)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1936.83-546.29C1438.42-173.73 1783.55 1190.98 866.4 1700.83-50.75 2210.68 203.58 2917.02-204.03 3064.03' stroke='rgba(82%2c 170%2c 74%2c 0.16)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1028'%3e%3crect width='2440' height='4260' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
   }
   /* square buttons */
 .rec.rec-arrow {
@@ -310,9 +311,11 @@ box-shadow: 0 0 1px 3px #52aa4a;
     -webkit-transition:  right .3s;
     -o-transition:  right .3s;
     transition:  right .3s;
+    
     background-color: #1f1d26;
     overflow-y: scroll;
     z-index: 999999;
+    border-end-start-radius:30px;
     border-start-start-radius: 30px;
     -webkit-box-shadow: 0px 0px 38px -1px rgba(0, 0, 0, 0.6);
             box-shadow: 0px 0px 38px -1px rgba(0, 0, 0, 0.6);

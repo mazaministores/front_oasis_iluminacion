@@ -5,7 +5,7 @@
   height: 100%;
   font-size: 16px;
   font-weight: 500;
-  background-color: white;
+  background-color: transparent;
   flex-direction: column;
   margin-bottom: 10px;
 
@@ -45,6 +45,7 @@
       border: 1px solid #52aa4a;
       border-radius: 20px;
       text-align: center;
+      background-color: #fff;
       cursor: pointer;
       flex-direction: column;
 
@@ -86,6 +87,7 @@
     padding: 0;
     display: none;
     overflow-x: auto;
+    background-color: #fff;
     gap: 10px;
 
     &::-webkit-scrollbar {

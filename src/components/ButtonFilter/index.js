@@ -11,7 +11,7 @@ export default function Button({ type, count, ...props }) {
         <div className={styles.counter}>{count}</div>
       )}
 
-      <span className={styles.text}>{type === "sort" ? "ELECTRILAMP" : "Filtros"}</span>
+      <span className={styles.text}>{type === "sort" ? "Precios sin IVA por lo que pueden estar sujetos a cambios" : "Filtros"}</span>
     </div>
   );
 }

@@ -32,11 +32,11 @@ export default function HorizontalCard({
   return (
     <div
       className={styles.horizontalCard}
-      style={{ backgroundColor: bgColor || "" }}
+      // style={{ backgroundColor: bgColor || "" }}
       onClick={() => navigate(href)}
     >
       <div className={styles.textContainer}>
-        <h3>{title}</h3>
+        <h3 style={{ textAlign: 'center' }}>{title}</h3>
         <span className={styles.description}>{desc}</span>
       </div>
       {image && (

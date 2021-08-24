@@ -127,7 +127,7 @@ function CartMenu(props) {
         })
 
 
-        window.open(`https://api.whatsapp.com/send?phone=+5804122842606&text=Hola+mi+nombre+es+${action.nombre}
+        window.open(`https://api.whatsapp.com/send?phone=+5804129991157&text=Hola+mi+nombre+es+${action.nombre}
             %0AReferencia+de+pedido:+${action.numeroPedido}%0A+Items+del+pedido:%0A${cart.toString()}+%0A
             Tipo+de+compra:+${action.tipo === 'delivery' ? 'Delivery' :
                 'Recoger+personalmente'}%0A${action.tipo === 'delivery' ? ('Direccion+de+entrega:+' + action.direccion +
