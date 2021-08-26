@@ -78,6 +78,7 @@ export default function Checkout({ handleInputChange, typeOrder, setTypeOrder, v
                                 <option value="Transferencias Bancarias">Transferencias Bancarias</option>
                                 <option value="Punto de Venta">Punto de Venta</option>
                                 <option value="Zelle">Zelle</option>
+                                <option value="Criptomonedas">Criptomonedas</option>
                                 <option value="Efectivo">Efectivo</option>
                             </select>
                         </form>
