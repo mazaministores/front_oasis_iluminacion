@@ -39,8 +39,7 @@ export default function CategoriesBar() {
         <CategoryItem name="Conexiones" emoji="🔱" link="/category/conexiones" />
         <CategoryItem name="Cables" emoji="🔌" link="/category/cables" />
         <CategoryItem name="Canaletas" emoji="🔩" link="/category/canaletas y accesorios" />
-        <CategoryItem name="Tomas" emoji="🔱" link="/category/tomas" />
-        <CategoryItem name="Interruptores" emoji="🕹️" link="/category/interruptores" />
+        <CategoryItem name="Tomas" emoji="🔱" link="/categorieoptions/tomas" />
         <CategoryItem name="Socates" emoji="🔅" link="/category/socates" />
       </ul>
       <ul className={styles.categoriesMd}>
@@ -54,8 +53,7 @@ export default function CategoriesBar() {
           <CategoryItem name="Conexiones" emoji="🔱" link="/category/conexiones" />
           <CategoryItem name="Cables" emoji="🔌" link="/category/cables" />
           <CategoryItem name="Canaletas" emoji="🔩" link="/category/canaletas y accesorios" />
-          <CategoryItem name="Tomas" emoji="🔱" link="/category/tomas" />
-          <CategoryItem name="Interruptores" emoji="🕹️" link="/category/interruptores" />
+          <CategoryItem name="Tomas" emoji="🔱" link="/categorieoptions/tomas" />
           <CategoryItem name="Socates" emoji="🔅" link="/category/socates" />
         </Carousel>
       </ul>

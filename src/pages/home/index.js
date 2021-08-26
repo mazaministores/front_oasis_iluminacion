@@ -8,7 +8,6 @@ import { Provider } from 'react-redux';
 import store from '../../redux/store'
 import Button from "../../components/ButtonFilter";
 
-
 export default function HomePage() {
 
   return (
@@ -22,7 +21,6 @@ export default function HomePage() {
               </h1>
               <div className={styles.headerButtons}>
                 <Button type="sort" style={{ marginRight: 20 }} />
-
               </div>
             </div>
             <Products>
@@ -30,62 +28,52 @@ export default function HomePage() {
                 bgColor="#f6f6f6"
                 name="Empotrados"
                 image="./EMPOTRADOS.jpg"
-                // desc="Empotrados de alta calidad al mejor precio del mercado"
-                // price="300"
                 href="/category/empotrados"
-              // sale_price="248"
               />
               <VerticalCard
                 bgColor="#f6f6f6"
-                onC="https://api.whatsapp.com/send?phone=+5804129991157&text=Hola+Iluminacion+Oasis+me+gustaria+que+desarrollaran+un+presuesto"
+                onC="https://api.whatsapp.com/send?phone=+5804129991157&text=Hola+Iluminacion+Oasis+me+gustaria+que+desarrollaran+un+presupuesto"
                 name="Solicita un presupuesto"
                 desc="Pulsa para solicitar un presupuesto via WhatsApp"
                 image="./PRESU.png"
-                // desc="Si nosotros no lo tenemos, no lo tiene nadie"
-                // price="200"
-                href="/category/bombillo"
               />
               <VerticalCard
                 bgColor="#f6f6f6"
                 name="Cables"
                 image="./CABLES.jpg"
-                // desc="Si nosotros no lo tenemos, no lo tiene nadie"
-                // price="200"
                 href="/category/cables"
               />
-            </Products>
-
-            <HorizontalCard
-              bgColor="#52aa4a"
-              image="./RIG.png"
-              title="Estructura para rig de mineria"
-              desc="No pases malos ratos, te traemos una solución. Todo listo para que inicies en la mineria"
-              href="/category/ILUMINACIÓN LED"
-            />
-            <Products>
               <VerticalCard
                 bgColor="#f6f6f6"
                 name="Tomas"
                 image="./TOMAS.jpg"
-                // desc="Empotrados de alta calidad al mejor precio del mercado"
-                // price="300"
-                href="/category/tomas"
-              // sale_price="248"
+                href="/categorieoptions/tomas"
+              />
+            </Products>
+            <HorizontalCard
+              bgColor="#52aa4a"
+              image="./RIG.png"
+              onC="https://api.whatsapp.com/send?phone=+5804129991157&text=Hola+Iluminación+Oasis+me+gustaria+saber+mas+de+los+stand+para+rig+de+mineria"
+              title="Estructura para rig de mineria"
+              desc="No pases malos ratos, te traemos una solución. Todo listo para que inicies en la mineria"
+            />
+            <Products two>
+              <VerticalCard
+                bgColor="#f6f6f6"
+                name="Tomas"
+                image="./TOMAS.jpg"
+                href="/categorieoptions/tomas"
               />
               <VerticalCard
                 bgColor="#f6f6f6"
                 name="Breaker"
                 image="./BREAKER.jpg"
-                // desc="Si nosotros no lo tenemos, no lo tiene nadie"
-                // price="200"
                 href="/category/breaker"
               />
               <VerticalCard
                 bgColor="#f6f6f6"
                 name="Varios"
                 image="./VARIOS.jpg"
-                // desc="Si nosotros no lo tenemos, no lo tiene nadie"
-                // price="200"
                 href="/category/miscelaneas"
               />
             </Products>

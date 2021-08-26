@@ -9,15 +9,14 @@ function Items(props) {
 
     if (props.loading) return <Spinner />
 
-    console.log(props.articles)
 
     return (
         <>
             <div style={{ marginBottom: '40px' }} >
-                <h5 className="categorie">{props.title}</h5>
+                <h5 className="categorie">{props.title === 'GN' ? 'GENERICOS' : props.title}</h5>
                 <div className="items-container" >
                     {
-                        props.articles.length === 0 ? <p className="no-found "> 😭 <span> No hay resultados en "{props.title}"</span></p> : <>
+                        props.articles.length === 0 ? <p className="no-found ">  <span> "{props.title}" No se encuentra</span></p> : <>
                             {props.articles.map(item =>
                                 <Card key={item.id} id={item.id} brand={item.brand} model={item.model} price={item.price} image={item.image} sizes={item.sizes} />
                             )}

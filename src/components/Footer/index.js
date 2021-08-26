@@ -10,22 +10,14 @@ export default function Footer() {
         'EMPOTRADOS',
         'ILUMINACIÓN LED',
         'BOMBILLO',
-        'LAMPARAS',
-        'CAJAS METALICAS',
+        'LAMPARAS DECORATIVAS',
         'TUBOS',
+        'CONTROL',
         'CONEXIONES',
-        'VARIOS',
         'CABLES',
-        'PROTECTORES Y REGULADORES',
         'CANALETAS',
         'TOMAS',
-        'INTERRUPTORES',
         'SOCATES',
-        'BREAKER',
-        'HERRAMIENTAS',
-        'BATERIAS',
-        'TRANSFORMADORES',
-        'CONTACTORES',
         'VAPOLETAS',
         'REFLECTORES'
     ]
@@ -34,9 +26,9 @@ export default function Footer() {
             <div>
                 <h4>Información Fiscal</h4>
                 <p className={styles.text}>
-                    Electricamente DCN, C.A.
-                    CALLE ARTURO USLAR PIETRI ESQUINA SUCRE EDIF ENSANCHE MOHEDANO PISO PB LOCAL 7
-                    J411970158
+                    Oasis Iluminación C.A. J408450445
+                    Miranda,Urbanización Chacao,
+                    Calle Paez Ed Santa Ana Local J
                 </p>
             </div>
             <div>

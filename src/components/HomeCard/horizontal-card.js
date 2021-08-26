@@ -8,6 +8,7 @@ export default function HorizontalCard({
   desc,
   image,
   href,
+  onC,
   ...props
 }) {
   const [, navigate] = useLocation()
@@ -16,7 +17,7 @@ export default function HorizontalCard({
       <div
         className={styles.horizontalCard}
         style={{ backgroundColor: bgColor || "" }}
-        onClick={() => navigate(href)}
+        onClick={onC ? () => window.open(onC) : () => navigate(href)}
       >
         <div
           className={styles.textContainer}
@@ -33,7 +34,7 @@ export default function HorizontalCard({
     <div
       className={styles.horizontalCard}
       // style={{ backgroundColor: bgColor || "" }}
-      onClick={() => navigate(href)}
+      onClick={onC ? () => window.open(onC) : () => navigate(href)}
     >
       <div className={styles.textContainer}>
         <h3 style={{ textAlign: 'center' }}>{title}</h3>

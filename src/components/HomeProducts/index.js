@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./products.module.scss";
 
-export default function Products({ reverse, children }) {
+export default function Products({ reverse, children, two }) {
   if (children.length > 4) return null;
 
   return (
@@ -9,9 +9,10 @@ export default function Products({ reverse, children }) {
       className={styles.container}
       style={{ direction: reverse ? "rtl" : "" }}
     >
-      <div>{children[0]}</div>
+      <div className={two ? styles.noMobile : ''}>{children[0]}</div>
       <div >{children[1]}</div>
       <div >{children[2]}</div>
+      <div className={styles.mobile} >{children[3]}</div>
     </div>
-  );
+  )
 }

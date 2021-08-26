@@ -18,9 +18,10 @@ export default function VerticalCard({
 }) {
   const [, navigate] = useLocation()
 
+
   return (
     <div
-      className={styles.verticalCard}
+      className={`${styles.verticalCard} `}
       style={{
         backgroundColor: bgColor || "",
         border: border && "2px solid #eee",

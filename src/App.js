@@ -5,13 +5,13 @@ import StorePage from './pages/store';
 import HomePage from './pages/home';
 import SearchPage from './pages/search';
 import ScrollToTop from './components/ScrollToTop'
+import CategorieSelectPage from './pages/Categorie-Select';
 
 const MasterPage = React.lazy(() => import('./pages/master/index'))
 const ArticlesPage = React.lazy(() => import('./pages/master/articles'))
 const OthersPage = React.lazy(() => import('./pages/master/others'))
 const LoginPage = React.lazy(() => import('./pages/master/login'))
 const DetailPage = React.lazy(() => import('./pages/master/detail'))
-
 
 function App() {
 
@@ -26,6 +26,10 @@ function App() {
         <Route
           path="/category/:id"
           component={StorePage}
+        />
+        <Route
+          path="/categorieoptions/:id"
+          component={CategorieSelectPage}
         />
         <Route
           path="/search/:id"
