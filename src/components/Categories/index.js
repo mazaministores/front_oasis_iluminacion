@@ -33,7 +33,7 @@ export default function CategoriesBar() {
         <CategoryItem name="Empotrados" emoji="⚡" link="/category/empotrados" />
         <CategoryItem name="Iluminación Led" emoji="🔆" link="/category/ILUMINACIÓN LED" />
         <CategoryItem name="Bombillos" emoji="💡" link="/category/bombillo" />
-        <CategoryItem name="Lamparas" emoji="🔬" link="/category/lamparas decorativas" />
+        <CategoryItem name="Lámparas" emoji="🔬" link="/category/lamparas decorativas" />
         <CategoryItem name="Control" emoji="⚙️" link="/category/control" />
         <CategoryItem name="Tubos " emoji="➖" link="/category/tubos" />
         <CategoryItem name="Conexiones" emoji="🔱" link="/category/conexiones" />
@@ -47,7 +47,7 @@ export default function CategoriesBar() {
           <CategoryItem name="Empotrados" emoji="⚡" link="/category/empotrados" />
           <CategoryItem name="Iluminación Led" emoji="🔆" link="/category/ILUMINACIÓN LED" />
           <CategoryItem name="Bombillos" emoji="💡" link="/category/bombillo" />
-          <CategoryItem name="Lamparas" emoji="🔬" link="/category/lamparas decorativas" />
+          <CategoryItem name="Lámparas" emoji="🔬" link="/category/lamparas decorativas" />
           <CategoryItem name="Control" emoji="⚙️" link="/category/control" />
           <CategoryItem name="Tubos " emoji="➖" link="/category/tubos" />
           <CategoryItem name="Conexiones" emoji="🔱" link="/category/conexiones" />

@@ -43,7 +43,7 @@ export default function CategorieSelectPage({ params }) {
             />
             <CustomHorizontalCard
               bgColor="#f6f6f6"
-              title="GENERICOS"
+              title="GENÉRICOS"
               href="/search/GN"
               image="../GENE.png"
               desc=".."

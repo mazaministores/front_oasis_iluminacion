@@ -17,7 +17,7 @@ export default function HomePage() {
           <main className={styles.main}>
             <div className={styles.header}>
               <h1 className={styles.title}>
-                <span className={styles.emoji}>👍</span>Todo en iluminación y mas
+                <span className={styles.emoji}>👍</span>Todo en iluminación y más
               </h1>
               <div className={styles.headerButtons}>
                 <Button type="sort" style={{ marginRight: 20 }} />
@@ -54,8 +54,8 @@ export default function HomePage() {
               bgColor="#52aa4a"
               image="./RIG.png"
               onC="https://api.whatsapp.com/send?phone=+5804129991157&text=Hola+Iluminación+Oasis+me+gustaria+saber+mas+de+los+stand+para+rig+de+mineria"
-              title="Estructura para rig de mineria"
-              desc="No pases malos ratos, te traemos una solución. Todo listo para que inicies en la mineria"
+              title="Estructura para rig de minería"
+              desc="No pases malos ratos, te traemos una solución. Todo listo para que inicies en la minería"
             />
             <Products two>
               <VerticalCard

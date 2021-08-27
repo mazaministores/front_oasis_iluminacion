@@ -65,7 +65,7 @@ export default function Header() {
         >
           <input
             className={styles.searchInput}
-            placeholder="Busca Productos y Mas"
+            placeholder="Busca Productos y Más"
             onChange={handleInputChange}
           />
         </form>

@@ -32,7 +32,7 @@ export default function Checkout({ handleInputChange, typeOrder, setTypeOrder, v
                             <p className="title-Checkout">Dirección de envio</p>
                             <label className="label">Dirección</label>
                             <input value={values.direccion} name="direccion" className="input" onChange={handleInputChange} />
-                            <label className="label">Numero de apartamento, casa, oficina (opcional)</label>
+                            <label className="label">Número de apartamento, casa, oficina (opcional)</label>
                             <input value={values.casa} name="casa" className="input" onChange={handleInputChange} />
                             <label className="label">Localidad</label>
                             <select value={values.localidad} name="localidad" className="select" onChange={handleInputChange}>
@@ -45,7 +45,7 @@ export default function Checkout({ handleInputChange, typeOrder, setTypeOrder, v
                                     )
                                 }
                             </select>
-                            <p className="title-Checkout">Metodo de pago </p>
+                            <p className="title-Checkout">Método de pago </p>
                             <label className="label">Seleccione un metodo</label>
                             <select value={values.metodoPago} name="metodoPago" className="select" onChange={handleInputChange}>
                                 <option value="">Seleccionar</option>
@@ -66,11 +66,11 @@ export default function Checkout({ handleInputChange, typeOrder, setTypeOrder, v
                             <input value={values.telefono} name="telefono" className="input" onChange={handleInputChange} />
                             <p className="title-Checkout">Venta</p>
                             <div className="note">
-                                <span>Si no posee un codigo simplemente puede dejar el campo vacio</span>
+                                <span>Si no posee un código simplemente puede dejar el campo vacio</span>
                             </div>
-                            <label className="label">Codigo de vendedor</label>
+                            <label className="label">Código de vendedor</label>
                             <input value={values.cod} name="cod" className="input" onChange={handleInputChange} />
-                            <p className="title-Checkout">Metodo de pago </p>
+                            <p className="title-Checkout">Método de pago </p>
                             <label className="label">Seleccione un metodo</label>
                             <select value={values.metodoPago} name="metodoPago" className="select" onChange={handleInputChange}>
                                 <option value="">Seleccionar</option>

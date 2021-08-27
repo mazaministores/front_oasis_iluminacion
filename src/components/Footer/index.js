@@ -10,7 +10,7 @@ export default function Footer() {
         'EMPOTRADOS',
         'ILUMINACIÓN LED',
         'BOMBILLO',
-        'LAMPARAS DECORATIVAS',
+        'LÁMPARAS DECORATIVAS',
         'TUBOS',
         'CONTROL',
         'CONEXIONES',
@@ -28,7 +28,7 @@ export default function Footer() {
                 <p className={styles.text}>
                     Oasis Iluminación C.A. J408450445
                     Miranda,Urbanización Chacao,
-                    Calle Paez Ed Santa Ana Local J
+                    Calle Páez Ed Santa Ana Local J
                 </p>
             </div>
             <div>
