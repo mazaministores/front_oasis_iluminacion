@@ -13,8 +13,10 @@ export default function SucessOrder({action,sendWhatsapp}){
 
     return(
     <div className="container-success-order">
-         <p className="text-number-order">Su numero de pedido es:</p>
-         <h2 className="number-order">{action.numeroPedido}</h2>
+         <p className="text-number-order"></p>
+         <h2 className="number-order">Muchas gracias {action.name}</h2>
+               <span className="time-order"> Esperamos que vuelvas pronto </span>
+        <span className="time-order">Su numero de pedido es: {action.numeroPedido} </span>
          <span className="time-order">Tiempo de entrega: 15m</span>
          <p>Gracias. Recibimos tu pedido</p>
          <p>{action.metodoPago}</p>

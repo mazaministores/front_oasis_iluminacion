@@ -73,12 +73,22 @@
           segoe ui symbol;
         font-size: 18px;
         margin-bottom: 4px;
+        animation: lifeEmoji 1.5s ease-in infinite;
 
         // @include md {
         //   margin-right: 14px;
         //   margin-bottom: 0px;
         // }
       }
+      @keyframes lifeEmoji{
+        0%{
+                  transform: rotate(0deg);
+        }
+        100%{
+                  transform: rotate(360deg);
+        }
+      }
+      
     }
   }
 

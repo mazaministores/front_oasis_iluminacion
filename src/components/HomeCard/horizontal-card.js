@@ -9,14 +9,36 @@ export default function HorizontalCard({
   image,
   href,
   onC,
+  bgImage,
+  direction,
+  w,
   ...props
 }) {
   const [, navigate] = useLocation()
+
+  if (bgImage) {
+    return (
+      <div
+        className={styles.horizontalCard}
+        style={{ backgroundImage: `url(${bgImage})`, direction: direction || "rtl" }}
+        onClick={onC ? () => window.open(onC) : () => navigate(href)}
+      >
+        <div className={styles.textContainer}>
+          <h2 style={{ textAlign: 'center', color: 'green' }}>{title}</h2>
+          {/* <span className={styles.description}>{desc}</span> */}
+        </div>
+
+      </div>
+
+    )
+  }
+
+
   if (!desc) {
     return (
       <div
         className={styles.horizontalCard}
-        style={{ backgroundColor: bgColor || "" }}
+        style={{ backgroundColor: bgColor || "", direction: direction || "rtl" }}
         onClick={onC ? () => window.open(onC) : () => navigate(href)}
       >
         <div
@@ -33,7 +55,7 @@ export default function HorizontalCard({
   return (
     <div
       className={styles.horizontalCard}
-      // style={{ backgroundColor: bgColor || "" }}
+      style={{ direction: direction || "initial", }}
       onClick={onC ? () => window.open(onC) : () => navigate(href)}
     >
       <div className={styles.textContainer}>
@@ -42,7 +64,7 @@ export default function HorizontalCard({
       </div>
       {image && (
         <div className={styles.imageContainer}>
-          <img className={styles.image} src={image} />
+          <img className={styles.image + ' ' + `${w ? styles.imageTwo : ''}`} src={image} />
         </div>
       )}
     </div>

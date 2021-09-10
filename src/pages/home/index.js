@@ -23,6 +23,14 @@ export default function HomePage() {
                 <Button type="sort" style={{ marginRight: 20 }} />
               </div>
             </div>
+            <HorizontalCard
+              bgColor="#52aa4a"
+              image="./CONDOMINIO.png"
+              href="/"
+              title="OFERTAS PARA CONDOMINIOS Y CLINICOS"
+              desc="Siempre pensando en ti"
+              w="55%"
+            />
             <Products>
               <VerticalCard
                 bgColor="#f6f6f6"
@@ -51,6 +59,7 @@ export default function HomePage() {
               />
             </Products>
             <HorizontalCard
+              direction="rtl"
               bgColor="#52aa4a"
               image="./RIG.png"
               onC="https://api.whatsapp.com/send?phone=+5804129991157&text=Hola+Iluminación+Oasis+me+gustaria+saber+mas+de+los+stand+para+rig+de+mineria"
