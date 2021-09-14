@@ -3,6 +3,7 @@ import './App.css';
 import { Route, Switch } from 'wouter';
 import StorePage from './pages/store';
 import HomePage from './pages/home';
+import OffersPage from './pages/Offers'
 import SearchPage from './pages/search';
 import ScrollToTop from './components/ScrollToTop'
 import CategorieSelectPage from './pages/Categorie-Select';
@@ -26,6 +27,10 @@ function App() {
         <Route
           path="/category/:id"
           component={StorePage}
+        />
+        <Route
+          path="/offers"
+          component={OffersPage}
         />
         <Route
           path="/categorieoptions/:id"
