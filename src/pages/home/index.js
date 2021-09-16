@@ -25,7 +25,7 @@ export default function HomePage() {
             </div>
             <HorizontalCard
               bgColor="#52aa4a"
-              image="./CONDOMINIO.png"
+              image="./CONDOMINIO.PNG"
               href="/offers"
               title="OFERTAS PARA CONDOMINIOS Y TU HOGAR"
               desc="Siempre pensando en ti"
