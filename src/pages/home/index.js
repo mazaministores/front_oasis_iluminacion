@@ -27,7 +27,7 @@ export default function HomePage() {
               bgColor="#52aa4a"
               image="./CONDOMINIO.PNG"
               href="/offers"
-              title="OFERTAS PARA CONDOMINIOS Y TU HOGAR"
+              title="OFERTAS PARA CONDOMINIOS, CENTROS COMERCIALES Y CLÍNICAS"
               desc="Siempre pensando en ti"
               w="55%"
             />
